@@ -5,79 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azure DEV Meetup München</title>
     <link rel="stylesheet" href="inter-font.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(90deg, #0078d4, #005a9e);
-            color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            max-width: 300px;
-            margin-bottom: 10px;
-        }
-        main {
-            flex: 1;
-            padding: 20px;
-            display: grid;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        section {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        section h2 {
-            margin-top: 0;
-            color: #0078d4;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #0078d4;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #0078d4;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="AzureDEVMeetupsCustom_16_Muenchen_white.png" alt="Azure DEV Meetup München Logo" style="max-width: 300px;">
+        <img src="AzureDEVMeetupsCustom_16_Muenchen_white.png" alt="Azure DEV Meetup München Logo">
     </header>
     <main>
         <section>
@@ -92,9 +24,9 @@
         </section>
         <section>
             <h2>Meet the Organizers</h2>
-            <div style="display: flex; gap: 20px; align-items: center; justify-content: space-around; width: 100%;">
-                <div style="text-align: center; flex: 1; max-width: 300px;">
-                    <img src="ralf-richter.jpg" alt="Ralf Richter" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+            <div class="organizers">
+                <div>
+                    <img src="ralf-richter.jpg" alt="Ralf Richter" class="organizer">
                     <p><strong>Ralf Richter</strong></p>
                     <p>Director Consulting Expert | Community Lead | Azure & AI MVP | Speaker | Trainer | Podcaster</p>
                     <p>
@@ -102,8 +34,8 @@
                         <a href="https://www.linkedin.com/in/richterralf/" target="_blank">LinkedIn</a>
                     </p>
                 </div>
-                <div style="text-align: center; flex: 1; max-width: 300px;">
-                    <img src="thomas-pentenrieder.png" alt="Thomas Pentenrieder" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+                <div>
+                    <img src="thomas-pentenrieder.png" alt="Thomas Pentenrieder" class="organizer">
                     <p><strong>Thomas Pentenrieder</strong></p>
                     <p>Senior Software Engineer at Medialesson, Azure MVP</p>
                     <p>
@@ -119,7 +51,7 @@
             <h2>Upcoming Events</h2>
             <p>Join us for our next event:</p>
             <a href="https://global25.azuredev.org" target="_blank">
-                <img src="globalazure2025.webp" alt="Global Azure München 2025" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="globalazure2025.webp" alt="Global Azure München 2025">
             </a>
         </section>
     </main>
