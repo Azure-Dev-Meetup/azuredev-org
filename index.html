@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AzureDev.org</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style type="text/css">
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #81008d;
-        color: #ffffff;
-        font-family: inter;
-        height: 100%;
-        background: linear-gradient(180deg, #81008d 0%, #ff00ff 100%);
-        background-image: url("background.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      a {
-        text-decoration: none;
-        color: #ffffff;
-        &:hover {
-          text-decoration: underline;
-          color: #cacaca;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure DEV Meetup München</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-      }
-      .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto 1fr;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        padding: 120px;
-      }
-      .event {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-
-      h1 {
-        text-align: center;
-        margin: 0;
-        font-size: 3.75rem;
-        color: #fff;
-        font-weight: 800;
-        line-height: 4.538125rem;
-        text-shadow: 0 4px 4px #00000040;
-      }
-
-      h2 {
-        font-size: 3.75rem;
-        font-weight: 800;
-        margin: 0;
-      }
-      h3 {
-        font-size: 1.8rem;
-        font-weight: 800;
-        margin: 0;
-      }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #0078d4, #005a9e);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #0078d4;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <a href="https://muc24.azuredev.org" class="event">
-        <h2>M&uuml;nchen</h2>
-        <h3>03. Dezember 2024</h3>
-      </a>
-      <h1>Azure Developer Community Day</h1>
-      <a href="https://leipzig24.azuredev.org" class="event">
-        <h2>Leipzig</h2>
-        <h3>05. Dezember 2024</h3>
-      </a>
-    </div>
-  </body>
+</head>
+<body>
+    <header>
+        <img src="AzureDEVMeetupsCustom_16_Muenchen_white.png" alt="Azure DEV Meetup München Logo" style="max-width: 300px;">
+    </header>
+    <main>
+        <section>
+            <h2>About the Meetup</h2>
+            <p>The Azure DEV Meetup München is a community-driven event for developers and tech enthusiasts to learn, share, and connect. Our goal is to foster collaboration and innovation within the Azure ecosystem.</p>
+            <p>Stay connected with the Azure DEV Meetup München community:</p>
+            <ul>
+                <li><a href="https://www.meetup.com/azure-dev-munich" target="_blank">Meetup</a></li>
+                <li><a href="https://www.linkedin.com/company/azure-dev-meetup-munich" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@AzureDevMuc" target="_blank">YouTube</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Meet the Organizers</h2>
+            <div style="display: flex; gap: 20px; align-items: center; justify-content: space-around; width: 100%;">
+                <div style="text-align: center; flex: 1; max-width: 300px;">
+                    <img src="ralf-richter.jpg" alt="Ralf Richter" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+                    <p><strong>Ralf Richter</strong></p>
+                    <p>Director Consulting Expert | Community Lead | Azure & AI MVP | Speaker | Trainer | Podcaster</p>
+                    <p>
+                        <a href="https://sessionize.com/ralf-richter" target="_blank">Sessionize</a> |
+                        <a href="https://www.linkedin.com/in/richterralf/" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+                <div style="text-align: center; flex: 1; max-width: 300px;">
+                    <img src="thomas-pentenrieder.png" alt="Thomas Pentenrieder" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+                    <p><strong>Thomas Pentenrieder</strong></p>
+                    <p>Senior Software Engineer at Medialesson, Azure MVP</p>
+                    <p>
+                        <a href="https://sessionize.com/thomas-pentenrieder" target="_blank">Sessionize</a> |
+                        <a href="https://bsky.app/profile/pentenrieder.dev" target="_blank">Bluesky</a> |
+                        <a href="https://medienstudio.net" target="_blank">Blog</a> |
+                        <a href="https://www.linkedin.com/in/thomaspentenrieder/" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Upcoming Events</h2>
+            <p>Join us for our next event:</p>
+            <a href="https://global25.azuredev.org" target="_blank">
+                <img src="globalazure2025.webp" alt="Global Azure München 2025" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p><a href="imprint.html">Imprint</a> | <a href="privacy.html">Privacy</a></p>
+    </footer>
+</body>
 </html>
